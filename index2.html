@@ -14,53 +14,68 @@
             <h1>Água</h1>
         </div>
         <ul>
-            <li class="glow-list-item"><a href="#" class="glow-button">Home</a></li>
-            <li class="glow-list-item"><a href="#" class="glow-button">Causas</a></li>
-            <li class="glow-list-item"><a href="#" class="glow-button">Créditos</a></li>
+            <li class="glow-list-item"><a href="index.html" class="glow-button">Home</a></li>
+            <li class="glow-list-item"><a href="index2.html" class="glow-button">Causas</a></li>
+            <li class="glow-list-item"><a href="index2.html" class="glow-button">Créditos</a></li>
             <li class="glow-list-item"><a href="#" class="glow-button">Fontes</a></li>
         </ul>
     </header>
-
+    <div class="primeiro">
+        <div class="logo2">
+            <h1 id="agua2">Água</h1>
+            <h1 id="agua2">Água</h1>
+        </div>
+        <h2>Site criado por Nicollas R. Santos Cruz</h2>
+        <h2 id="insta">@nicollas.crz</h2>
+    </div>
     <section id="sobre">
-        <article class="esquerda">
-            <h2>Vice-Presidente</h2>
-            <h1>Executivo</h1>
-            <p>Como vice-presidente, para beneficiar a população, se pode atender as reclamações da população, propor projetos de lei que possam beneficiar a ela em várias áreas como educação e saúde, pode e deve estar atento as necessidades dos cidadãos, para preservar a integridade do país o vice também deve preservar a sua própria imagem e preservar boas relações externas juntamente com o presidente. Além de estar sempre aconselhando o presidente na tomada de boas decisões para benefício da nação.</p>
-        </article>
 
-        <article class="direita">
-            <img src="assets/ilustração2.png" alt="">
-        </article>
+            <article class="baixo">
+                <h2></h2>
+                <h1></h1>
+                <p></p>
+            </article>
     </section>
 
-
-    <section id="servicos">
-        <article class="esquerda">
-            <img src="Imagens/ilustração3.png"">
-        </article>
-
-        <article class="direita">
-            <h2>Senador</h2>
-            <h1>Legislativo</h1>
-            <p>O principal benefício deste cargo para a sociedade é integrar as comissões do senado, que podem ser temporárias ou permanentes. No Senado, as funções podem ser legislativas, fiscalizadoras, autorizativas, julgadoras, aprovadoras de autoridades, entre várias outras competências.</p>
-        </article>        
-    </section>
-
-    <section id="contatos">
+    <section class="servicos">
+        <h1 id="pesquisa">Pesquisas</h1>
         <article class="baixo">
-            <h2>Governador(A)</h2>
-            <h1>Executivo</h1>
-            <p>investir em laboratórios de pesquisa com especialização em vacinas e remédios contra doença,empregar projetos nas escolas que incentivem o protagonismo juvenil valorizando as habilidades do estudante,direito a saúde pública a todos,aqueles que passam por extrema pobreza teram total direito de receber cestas básicas e um salário mínimo por mês pelo programa criado pelo governo,determinadas áreas verdes de acesso restrito para a melhor forma de preservar o meio ambiente.</p>
-        </article>
+            <h2>Luísa<br>Carla<br>Iasmin<br>Pedro</nr></h2>
+        </article>   
     </section>
-
     <footer>
         <p>Todos direitos reservados</p>
         <p>&copy; Copyright Nicollas Cruz</p>
     </footer>
+    <script>
+        window.addEventListener("scroll", () => {
+
+        document.querySelectorAll(".esquerda").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 50){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
+
+        document.querySelectorAll(".direita").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 50){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
+
+        document.querySelectorAll(".baixo").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 250){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
 
 
-    <script src="app.js"></script>
-    
+        })
+    </script>
 </body>
 </html>
