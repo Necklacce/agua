@@ -160,7 +160,7 @@ section #text spam{
     width: 100%;
     height: 100px;
     z-index: 1;
-    background: url(//imagens/wave.png);
+    background: url(//imagens\wave.png);
     background-size: 1000px 100px;
 }
 #section #wave1{
