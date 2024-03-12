@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    background-color: white;
+    overflow-x:hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    padding: 30px;
+    padding-right: 100px;
+    top: 15px;
+    right: 100px;
+    z-index: 3;
+}
+.glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+/* Efeito de brilho ao passar o mouse */
+.glow-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px #3498db;
+}
+.logo h1{
+    position: absolute;
+    font-size: 50px ;
+    top: 10px;
+    left: 30px;  
+}
+.logo h1:nth-child(1)
+{
+    color:transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+
+}
+.logo h1:nth-child(2)
+{
+    color:#03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+
+        clip-path: polygon(0 47%, 11% 43%, 22% 42%, 31% 45%, 40% 50%, 48% 56%, 57% 61%, 68% 64%, 78% 63%, 86% 58%, 94% 55%, 100% 51%, 100% 100%, 0 100%);
+
+    }
+    50%{
+
+        clip-path: polygon(0 65%, 11% 70%, 23% 71%, 33% 67%, 41% 61%, 50% 55%, 61% 47%, 71% 43%, 81% 41%, 92% 42%, 96% 45%, 100% 50%, 100% 100%, 0 100%);
+
+    }
+}
+.primeiro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000 0%, #1f2020 39.95%, #3c3d42 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.logo2{
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+.logo2 h1{
+    position: absolute;
+    font-size: 200px ;
+    margin: 30vh;
+}
+.logo2 h1:nth-child(1)
+{
+    color:transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+
+}
+.logo2 h1:nth-child(2)
+{
+    color:#03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+.primeiro h2{
+    width: 100%;
+    height: 40%;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primeiro #insta{
+    height: 50%;
+    font-size: 30px;
+    background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section article{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section h2{
+    color: #3CB372;
+    font-size: 70px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    line-height: 200px;
+}
+
+section h1{
+    color: #000000;
+    font-size: 150px;
+
+}
+section p, section ul{
+    color: rgb(49, 47, 47);
+    font-weight: bolder;
+}
+
+section:last-of-type{
+    text-align: center;
+    background-color: rgb(250,250,250);
+}
+
+section:last-of-type a{
+    text-decoration: none;
+    color: rgb(80,80,80);
+}
+footer{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #121213;
+    padding: 15px 0 300px;
+    top: 230vh;
+}
+
+footer p{   
+    color: white;
+}
+
+button{
+    display: none;
+}
+.baixo{
+    transform: translateY(50%);
+    opacity: 0;
+    margin-bottom: 300px;
+}
+
+.efeitoScroll{
+    transform: translate(0,0) !important;
+    opacity: 1 !important;
+    transition: all 1.5s ease-in-out;
+}
