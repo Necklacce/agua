@@ -152,6 +152,7 @@ section #text spam{
     position: absolute;
     width: 100%;
     bottom: 0;
+    background: url(//imagens/wave.png);
 }
 #section .waves .wave{
     position: absolute;
